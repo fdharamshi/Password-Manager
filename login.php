@@ -11,9 +11,11 @@ echo "<!doctype html>";
 echo "<html>";
 echo "<head>";
 echo "<meta charset=\"UTF-8\">";
-echo "<title>Dashboard</title>";
+echo "<title>Dashboard - Password Manager</title>";
 echo "<link rel=\"stylesheet\" href=\"lib/w3.css\">";
 echo "</head>";
+echo "<body>";
+echo "<header class=\"w3-card-4 w3-teal\"><h2><img src=\"img_opt.png\"/>".$uid."</h2></header>";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -82,4 +84,6 @@ class=\"w3-btn\">See Password</button></td></tr>";
 		}
 }
 $conn->close();
+
+echo "</body></html>";
 ?>
